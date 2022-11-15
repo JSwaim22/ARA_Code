@@ -1,0 +1,81 @@
+Expense_Type,Expense_Category
+beach house,Mortgage
+mountain house,Mortgage
+home,Mortgage
+vacation house,Mortgage
+second house,Mortgage
+foreign house,Mortgage
+natural gas,Utility
+water,Utility
+electricity,Utility
+internet,Utility
+trash,Utility
+entertainment,Utility
+Discover,Credit Card
+Capital One,Credit Card
+Chase,Credit Card
+American Express,Credit Card
+Wells Fargo,Credit Card
+Citi,Credit Card
+Bank of America,Credit Card
+babysitter,Childcare
+afterschool,Childcare
+day care,Childcare
+preschool,Childcare
+groceries,Food
+restaurant,Food
+breakfast,Food
+lunch,Food
+dinner,Food
+cafeteria,Food
+drinks,Food
+bar,Food
+dessert,Food
+pets,Food
+family car loan,Car
+truck loan,Car
+spare car loan,Car
+gas,Car
+repairs,Car
+tires,Car
+parts,Car
+oil,Car
+inspection,Car
+new phone,Cell
+data bill,Cell
+screen fix,Cell
+accessories,Cell
+laundry detergent,Cleaning
+wipes,Cleaning
+paper towels,Cleaning
+windex,Cleaning
+febreeze,Cleaning
+dishwaher detergent,Cleaning
+haircut,Services
+massage,Services
+hotel,Services
+lawn care,Services
+therapy,Services
+house cleaning,Services
+tooth paste,Toiletries
+tooth brush,Toiletries
+lotion,Toiletries
+hair gel,Toiletries
+hair brush,Toiletries
+shampoo,Toiletries
+conditioner,Toiletries
+body wash,Toiletries
+razor,Toiletries
+shaving cream,Toiletries
+chap stick,Toiletries
+makeup,Toiletries
+deoderant,Toiletries
+toilet paper,Toiletries
+towel,Toiletries
+washcloth,Toiletries
+insurance,Car
+snacks,Food
+Legos,Toys
+pizza,Food
+battery,Cell
+friend,Childcare

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <!--GLOBAL PARAMETERS-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--TITLE-->
+        <title>Ultrasonic Wood Tester</title>
+
+        <!--FIREBASE CONNECTION-->
+        <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+        <script>
+            var firebaseConfig = {
+            apiKey: "AIzaSyBUDAqWboCrTCVDK8MouFgOTbOX4c7aU5Y",
+            authDomain: "ultrasonicwoodtester.firebaseapp.com",
+            databaseURL: "https://ultrasonicwoodtester-default-rtdb.firebaseio.com",
+            projectId: "ultrasonicwoodtester",
+            storageBucket: "ultrasonicwoodtester.appspot.com",
+            messagingSenderId: "123767620527",
+            appId: "1:123767620527:web:da70b3a64966ddf64ee55a",
+            measurementId: "G-2M0PMMY5B9"
+            };
+            firebase.initializeApp(firebaseConfig);
+            var database = firebase.database();
+        </script>
+
+        <!--STYLE LINKS-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+        <link rel="icon" type="image/png" href="favicon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+
+    <body>
+        <!--WEBSITE HEADER-->
+        <div class="topnav">
+            <h1>Ultrasonic Wood Tester  <i class="far fa-tree"></i></h1>
+        </div>
+
+        <!--WEBSITE BODY-->
+        <div class="card-grid">
+            <!--DEVICE NOT CONNECTED CARD-->
+            <!--<div class="card">
+                <p class="card-title">Device Not Connected</p>
+                <p>Please ensure device is powered on and connected to wifi</p>
+            </div>-->
+            
+            <!--TAKING TESTS CARD-->
+            <div class="card">
+                <p class="card-title"><span id="current-sample-title"></span> Sample <span id="current-test-name"></span> Test</p>
+                <p class="data-title" style="text-align:left;text-indent: 25px">Time of Flight</p>
+                <span id="reading-timeOfFlight"></span>
+                <p class="data-title" style="text-align:left;text-indent: 25px">Temperature</p>
+                <span id="reading-temperature"></span>
+                <p class="data-title" style="text-align:left;text-indent: 25px">Humidity</p>
+                <span id="reading-humidity"></span>
+                <p id="new-data" style="text-align:left;text-indent: 25px">
+                    <button class="button-on" id="dataButton" onclick='newTest()'><i class="far fa-database"></i></button><span> Take new test</span>
+                </p>
+                <form id="test-form">
+                    <div class="form-elements-container">
+                        <input type="text" placeholder="Enter test name" id="input-test-name" required>
+                        <p class="message-warning" id="no-test-name-warning" style="display: none;">Test name required for taking new test</p>
+                    </div>
+                </form>
+            </div>
+            
+            <!--TEST HISTORY CARD-->
+            <div class="card">
+                <p class="card-title"><span id="current-sample"></span> Sample Test History</p>
+                <table id="readings-table">
+                    <tr id="theader">
+                      <th>Name</th>
+                      <th>ToF (us)</th>
+                      <th>Temp (F)</th>
+                      <th>Hum (%)</th>
+                    </tr>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+                <p id="delete-sample" style="text-align:left;text-indent: 25px">
+                    <button type='button' class='button-on' id='deleteSampleButton' onclick='deleteSample()'>X</button> <span> Delete Sample</span>
+                </p>
+                <p id="delete-test" style="text-align:left;text-indent: 25px">
+                    <button type='button' class='button-on' id='deleteTestButton' onclick='deleteTest()'>X</button> <span> Delete Latest Test</span>
+                </p>
+            </div>
+            
+            <!--CHANGING SAMPLE CARD-->
+            <div class="card">
+                <p class="card-title">Select a name below to change the current sample</p>
+                <div id="wood-samples"></div>
+                <p id="new-sample" style="text-align:left;text-indent: 25px">
+                    <button type='button' class='button-on' id='newSampleButton' onclick='newSample()'>+</button> <span> New Sample</span>
+                    <form id="sample-form">
+                        <div class="form-elements-container">
+                            <input type="text" placeholder="Enter sample name" id="input-sample-name" required>
+                            <p class="message-warning" id="no-sample-name-warning" style="display: none;">Sample name required for creating new sample</p>
+                        </div>
+                    </form>
+                </p>
+            </div>
+        </div>
+        
+        <!--JAVASCRIPT LINK-->
+        <script src="scripts/index.js"></script> 
+    </body>
+
+</html>

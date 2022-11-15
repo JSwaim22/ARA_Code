@@ -1,0 +1,6 @@
+----------------------------------------------------------------
+2022-04-15 05:47:25.586 GMT:
+ Booting Cloudscape version IBM Corp. - DBMS:db2j - 5.1.60.17 - (30436): instance c013800d-0180-2bc3-0ff7-0000073bb6d8
+on database directory C:\database\QuoteDB 
+
+Database Class Loader started - db2j.database.classpath=''

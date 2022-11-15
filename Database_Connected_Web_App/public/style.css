@@ -1,0 +1,96 @@
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: inline-block;
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #6c451c;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #aa946a;
+    color: #6c451c;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+#user-details {
+    color: #6c451c;
+}
+
+.content {
+    padding: 20px;
+}
+
+body {
+    margin: 0;
+}
+
+.card-grid {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.card {
+    background-color: #bcc4a3;
+    box-shadow: 2px 2px 12px 1px rgba(140,140,140,.5);
+}
+
+.card-title {
+    font-size: 1.2rem;
+    color: #cc8c7c
+}
+
+.message-warning {
+    font-size: 0.8rem;
+    color: #ff3300
+}
+
+.data-title {
+    font-size: 1.0rem;
+    color: #000000;
+    font-weight: bold;
+}
+
+.state {
+    color:#6c451c;
+}
+
+button {
+    background-color: #aa946a;
+    color:#6c451c;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.button-on {
+    background-color: #cc8c7c;
+}
+
+.button-on:hover {
+    background-color: #cc8c7c;
+}
+
+.form-elements-container{
+    padding: 16px;
+    width: 250px;
+    margin: 0 auto;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
