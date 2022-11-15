@@ -12,6 +12,8 @@ Branch Predictor
 
 Bluetooth and MQTT
 
+Smart Lighting
+
 
 ## Python
 Expense Manager
